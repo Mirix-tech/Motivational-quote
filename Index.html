@@ -1,0 +1,75 @@
+<!<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Motivation</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #1f1c2c, #928dab);
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .welcome {
+      font-size: 16px;
+      color: #ddd;
+      margin-bottom: 30px;
+    }
+    #quoteBox {
+      background-color: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 12px;
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      background-color: #ff8c42;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #e07b32;
+    }
+  </style>
+</head>
+<body>
+  <h1>💬 Daily Motivation</h1>
+  <div class="welcome">Welcome! A message of hope from <strong>Miracle 💙</strong></div>
+  
+  <div id="quoteBox">Tap the button to get inspired 🌟</div>
+  <button onclick="showQuote()">Show Me a Quote</button>
+
+  <script>
+    const quotes = [
+      "You survived 100% of your worst days. You’re doing great. 💪",
+      "Even broken crayons still color. Keep going. 🎨",
+      "You’re not behind. You’re just on your own timeline. 🕰️",
+      "Healing takes time. Breathe. You’re allowed to rest. 🌱",
+      "Some days you’ll bloom. Some days you’ll just survive. Both are okay. 🌸",
+      "Your story isn’t over yet. You’re still becoming. 📖",
+      "Every storm runs out of rain. You won’t be stuck here forever. ⛈️",
+      "Don’t let a bad day trick you into thinking you have a bad life. 🌤️"
+    ];
+
+    function showQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quoteBox").innerText = quotes[randomIndex];
+    }
+  </script>
+</body>
+</html>
